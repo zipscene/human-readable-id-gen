@@ -1,0 +1,41 @@
+{
+  "name": "zs-id-generator",
+  "version": "0.0.1",
+  "description": "Library for generating human-readable id strings",
+  "main": "./dist/lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@git.zipscene.com:zsapilibs/zs-id-generator.git"
+  },
+  "scripts": {
+    "lint": "node ./node_modules/.bin/eslint . || exit 0",
+    "docs": "node ./node_modules/.bin/yuidoc .",
+    "test": "npm run-script build && node ./node_modules/.bin/mocha ./dist/test -R spec",
+    "build": "rm -rf dist && ./node_modules/.bin/broccoli build dist; chmod -f u+x dist/bin/*; rm -rf tmp",
+    "prepublish": "npm run-script build && npm run-script docs"
+  },
+  "dependencies": {
+    "babel-runtime": "6.6.1",
+    "lodash": "^4.11.1"
+  },
+  "devDependencies": {
+    "broccoli": "^0.16.9",
+    "broccoli-babel-transpiler": "^5.5.0",
+    "broccoli-cli": "^1.0.0",
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-merge-trees": "^1.1.1",
+    "broccoli-static-compiler": "^0.2.2",
+    "broccoli-wrap": "0.0.2",
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "mocha": "^2.4.5",
+    "mocha-logger": "^1.0.3",
+    "rimraf": "^2.5.2",
+    "sinon": "^1.17.3",
+    "source-map-support": "^0.4.0",
+    "yuidocjs": "^0.10.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.zipscene.com/"
+  }
+}

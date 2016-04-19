@@ -1,0 +1,8 @@
+{
+	"name": "zs-id-generator",
+	"description": "Library for generating human-readable id strings",
+	"options": {
+		"outdir": "./docs",
+		"exclude": "dist,tmp,test,node_modules"
+	}
+}
