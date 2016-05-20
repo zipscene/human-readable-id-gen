@@ -27,6 +27,7 @@
     "broccoli-static-compiler": "^0.2.2",
     "broccoli-wrap": "0.0.2",
     "chai": "^3.5.0",
+    "es6-promise": "^3.2.1",
     "eslint": "^1.10.3",
     "mocha": "^2.4.5",
     "mocha-logger": "^1.0.3",

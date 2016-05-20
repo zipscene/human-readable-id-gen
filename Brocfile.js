@@ -4,6 +4,7 @@ var esTranspiler = require('broccoli-babel-transpiler');
 var mergeTrees = require('broccoli-merge-trees');
 var Funnel = require('broccoli-funnel');
 var wrapFiles = require('broccoli-wrap');
+var Promise = require('es6-promise').Promise;
 
 // Returns a broc tree corresponding to the original source files
 function getSourceTrees(pathsToSearch) {
