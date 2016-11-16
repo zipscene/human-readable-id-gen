@@ -1,5 +1,5 @@
 {
-	"name": "zs-id-generator",
+	"name": "human-readable-id-gen",
 	"description": "Library for generating human-readable id strings",
 	"options": {
 		"outdir": "./docs",

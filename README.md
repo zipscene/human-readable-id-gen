@@ -1,11 +1,11 @@
-# zs-id-generator
+# human-readable-id-gen
 
 Library for generating human-readable id strings.
 
 ## Basic Usage
 
 ```javascript
-const { generateId } = require('zs-id-generator');
+const { generateId } = require('human-readable-id-gen');
 
 console.log(generateId());
 // ex. Regina's required request
@@ -24,7 +24,7 @@ The `generateId` function randomly pulls words from a default collection of noun
 Use the `IdGenerator` constructor with instances of `WordCollection`.
 
 ```javascript
-const { IdGenerator, WordCollection } = require('zs-id-generator');
+const { IdGenerator, WordCollection } = require('human-readable-id-gen');
 
 let nouns = new WordCollection(['chair', 'tie', 'lamp']);
 let adjectives = new WordCollection(['good', 'bad', 'ugly']);
@@ -43,7 +43,7 @@ Note that alliteration is not guaranteed if, for any word in the nouns collectio
 Use `IdGenerator.load` to load words from text files. These files should contain words separated by newlines.
 
 ```javascript
-const { IdGenerator } = require('zs-id-generator');
+const { IdGenerator } = require('human-readable-id-gen');
 
 let idGenerator = IdGenerator.load(
 	'path/to/nouns.txt',
@@ -58,7 +58,7 @@ console.log(idGenerator.generate());
 Individual `WordCollection` instances can also be loaded from files:
 
 ```javascript
-const { IdGenerator, WordCollection } = require('zs-id-generator');
+const { IdGenerator, WordCollection } = require('human-readable-id-gen');
 
 let nouns = WordCollection.load('path/to/nouns.txt');
 let adjectives = new WordCollection(['good', 'bad', 'ugly']);

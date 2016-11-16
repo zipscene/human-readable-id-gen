@@ -1,12 +1,15 @@
 {
-  "name": "zs-id-generator",
+  "name": "human-readable-id-gen",
   "version": "0.0.2",
   "description": "Library for generating human-readable id strings",
   "main": "./dist/lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@git.zipscene.com:zsapilibs/zs-id-generator.git"
+    "url": "https://github.com/zipscene/human-readable-id-gen.git"
   },
+  "keywords": [
+    "id-generator"
+  ],
   "scripts": {
     "lint": "node ./node_modules/.bin/eslint . || exit 0",
     "docs": "node ./node_modules/.bin/yuidoc .",
@@ -36,7 +39,5 @@
     "source-map-support": "^0.4.0",
     "yuidocjs": "^0.10.0"
   },
-  "publishConfig": {
-    "registry": "https://npm.zipscene.com/"
-  }
+  "license": "Apache-2.0"
 }
